@@ -26,217 +26,105 @@
     content: '♩ ♪ ♫ ♬ ♩ ♪ ♫ ♬ ♩ ♪';
     position: absolute;
     top: 6px; left: 0; right: 0;
-    font-size: 13px;
-    letter-spacing: 6px;
-    color: rgba(201,168,76,0.2);
-    text-align: center;
+    font-size: 13px; letter-spacing: 6px;
+    color: rgba(201,168,76,0.2); text-align: center;
   }
   .header-series {
     font-family: 'Oswald', sans-serif;
-    font-size: 9px;
-    letter-spacing: 5px;
-    color: #C9A84C;
-    text-transform: uppercase;
-    margin-bottom: 8px;
+    font-size: 9px; letter-spacing: 5px;
+    color: #C9A84C; text-transform: uppercase; margin-bottom: 8px;
   }
   .header-name {
     font-family: 'Playfair Display', serif;
-    font-size: 34px;
-    font-weight: 900;
-    color: #FAF3E0;
-    line-height: 1;
+    font-size: 34px; font-weight: 900; color: #FAF3E0; line-height: 1;
   }
   .header-tagline {
     font-family: 'Cormorant Garamond', serif;
-    font-style: italic;
-    font-size: 15px;
-    color: #E8C97A;
-    margin-top: 7px;
+    font-style: italic; font-size: 15px; color: #E8C97A; margin-top: 7px;
   }
-  .badge-row {
-    display: flex;
-    justify-content: center;
-    padding: 16px 20px 0;
-  }
+  .badge-row { display: flex; justify-content: center; padding: 16px 20px 0; }
   .badge {
     background: linear-gradient(135deg, #5C0F0F, #8B1A1A);
-    border: 1px solid #C9A84C;
-    padding: 8px 20px;
-    font-family: 'Oswald', sans-serif;
-    font-size: 11px;
-    letter-spacing: 3px;
-    color: #E8C97A;
-    text-transform: uppercase;
-    text-align: center;
+    border: 1px solid #C9A84C; padding: 8px 20px;
+    font-family: 'Oswald', sans-serif; font-size: 11px;
+    letter-spacing: 3px; color: #E8C97A; text-transform: uppercase; text-align: center;
   }
   .hymns {
-    max-width: 500px;
-    margin: 0 auto;
-    padding: 20px 16px;
-    display: flex;
-    flex-direction: column;
-    gap: 18px;
+    max-width: 500px; margin: 0 auto;
+    padding: 20px 16px; display: flex; flex-direction: column; gap: 18px;
   }
   .hymn-card {
     background: #1c1408;
     border: 1px solid rgba(201,168,76,0.25);
-    overflow: hidden;
-    transition: border-color 0.3s;
+    overflow: hidden; transition: border-color 0.3s;
   }
   .hymn-card.active { border-color: #C9A84C; }
-  .hymn-head {
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    user-select: none;
-  }
+  .hymn-head { display: flex; align-items: center; cursor: pointer; user-select: none; }
   .hymn-year-col {
     background: linear-gradient(180deg, #5C0F0F, #8B1A1A);
-    padding: 14px 16px;
-    flex-shrink: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-width: 82px;
-    border-right: 1px solid rgba(201,168,76,0.3);
+    padding: 14px 16px; flex-shrink: 0;
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    min-width: 82px; border-right: 1px solid rgba(201,168,76,0.3);
   }
   .hymn-year {
     font-family: 'Playfair Display', serif;
-    font-size: 34px;
-    font-weight: 900;
-    color: #C9A84C;
-    line-height: 1;
+    font-size: 34px; font-weight: 900; color: #C9A84C; line-height: 1;
   }
   .hymn-era {
-    font-family: 'Oswald', sans-serif;
-    font-size: 8px;
-    letter-spacing: 1px;
-    color: rgba(232,201,122,0.6);
-    text-transform: uppercase;
-    margin-top: 3px;
-    text-align: center;
+    font-family: 'Oswald', sans-serif; font-size: 8px;
+    letter-spacing: 1px; color: rgba(232,201,122,0.6);
+    text-transform: uppercase; margin-top: 3px; text-align: center;
   }
   .hymn-info { flex: 1; padding: 12px 14px; }
   .hymn-title {
-    font-family: 'Oswald', sans-serif;
-    font-size: 13px;
-    font-weight: 600;
-    letter-spacing: 1px;
-    color: #FAF3E0;
-    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif; font-size: 13px;
+    font-weight: 600; letter-spacing: 1px; color: #FAF3E0; text-transform: uppercase;
   }
   .hymn-sub {
-    font-family: 'Cormorant Garamond', serif;
-    font-style: italic;
-    font-size: 12px;
-    color: rgba(232,201,122,0.65);
-    margin-top: 2px;
+    font-family: 'Cormorant Garamond', serif; font-style: italic;
+    font-size: 12px; color: rgba(232,201,122,0.65); margin-top: 2px;
   }
-  .hymn-fact {
-    font-size: 11.5px;
-    color: rgba(250,243,224,0.5);
-    margin-top: 5px;
-    line-height: 1.4;
-  }
+  .hymn-fact { font-size: 11.5px; color: rgba(250,243,224,0.5); margin-top: 5px; line-height: 1.4; }
   .hymn-arrow {
-    padding: 0 14px;
-    font-size: 16px;
-    color: rgba(201,168,76,0.5);
-    flex-shrink: 0;
-    transition: transform 0.3s, color 0.3s;
+    padding: 0 14px; font-size: 16px; color: rgba(201,168,76,0.5);
+    flex-shrink: 0; transition: transform 0.3s, color 0.3s;
   }
   .hymn-card.active .hymn-arrow { transform: rotate(90deg); color: #C9A84C; }
-
   .player-panel {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.45s ease;
-    background: #120e04;
-    border-top-color: rgba(201,168,76,0.0);
-    border-top: 1px solid transparent;
+    max-height: 0; overflow: hidden; transition: max-height 0.45s ease;
+    background: #120e04; border-top: 1px solid transparent;
   }
-  .hymn-card.active .player-panel {
-    max-height: 500px;
-    border-top-color: rgba(201,168,76,0.15);
-  }
+  .hymn-card.active .player-panel { max-height: 500px; border-top-color: rgba(201,168,76,0.15); }
   .player-inner { padding: 16px; }
   .audio-label {
-    font-family: 'Oswald', sans-serif;
-    font-size: 9px;
-    letter-spacing: 3px;
-    color: rgba(201,168,76,0.6);
-    text-transform: uppercase;
-    margin-bottom: 8px;
-    display: flex;
-    align-items: center;
-    gap: 8px;
+    font-family: 'Oswald', sans-serif; font-size: 9px;
+    letter-spacing: 3px; color: rgba(201,168,76,0.6);
+    text-transform: uppercase; margin-bottom: 8px;
+    display: flex; align-items: center; gap: 8px;
   }
-  .audio-label::after {
-    content: '';
-    flex: 1;
-    height: 1px;
-    background: rgba(201,168,76,0.15);
-  }
+  .audio-label::after { content: ''; flex: 1; height: 1px; background: rgba(201,168,76,0.15); }
   .audio-wrap {
-    background: #0c0904;
-    border: 1px solid rgba(201,168,76,0.2);
-    padding: 12px 14px 10px;
-    margin-bottom: 12px;
+    background: #0c0904; border: 1px solid rgba(201,168,76,0.2);
+    padding: 12px 14px 10px; margin-bottom: 12px;
   }
   audio { width: 100%; display: block; }
-  .audio-note {
-    font-size: 10px;
-    color: rgba(250,243,224,0.25);
-    font-style: italic;
-    margin-top: 6px;
-  }
-  .audio-note a { color: rgba(201,168,76,0.4); }
-
+  .audio-note { font-size: 10px; color: rgba(250,243,224,0.25); font-style: italic; margin-top: 6px; }
   .lyrics-btn {
-    background: none;
-    border: 1px solid rgba(201,168,76,0.25);
-    color: rgba(201,168,76,0.7);
-    font-family: 'Oswald', sans-serif;
-    font-size: 10px;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-    cursor: pointer;
-    padding: 7px 16px;
-    width: 100%;
-    transition: all 0.2s;
+    background: none; border: 1px solid rgba(201,168,76,0.25);
+    color: rgba(201,168,76,0.7); font-family: 'Oswald', sans-serif;
+    font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+    cursor: pointer; padding: 7px 16px; width: 100%; transition: all 0.2s;
   }
   .lyrics-btn:hover { background: rgba(201,168,76,0.08); color: #C9A84C; }
   .lyrics-block {
-    display: none;
-    margin-top: 10px;
-    padding: 14px 16px;
-    background: rgba(255,255,255,0.02);
-    border-left: 2px solid #8B1A1A;
+    display: none; margin-top: 10px; padding: 14px 16px;
+    background: rgba(255,255,255,0.02); border-left: 2px solid #8B1A1A;
   }
   .lyrics-block.open { display: block; }
-  .lyrics-text {
-    font-size: 14px;
-    line-height: 2;
-    color: rgba(250,243,224,0.8);
-    white-space: pre-line;
-  }
+  .lyrics-text { font-size: 14px; line-height: 2; color: rgba(250,243,224,0.8); white-space: pre-line; }
   .refrain { color: #E8C97A; font-style: italic; }
-  .source-note {
-    font-size: 10px;
-    color: rgba(250,243,224,0.25);
-    font-style: italic;
-    margin-top: 10px;
-    text-align: right;
-  }
-  .source-note a { color: rgba(201,168,76,0.35); text-decoration: none; }
-  .footer {
-    max-width: 500px;
-    margin: 8px auto 0;
-    padding: 16px 16px 0;
-    text-align: center;
-    border-top: 1px solid rgba(201,168,76,0.12);
-  }
+  .source-note { font-size: 10px; color: rgba(250,243,224,0.25); font-style: italic; margin-top: 10px; text-align: right; }
+  .footer { max-width: 500px; margin: 8px auto 0; padding: 16px 16px 0; text-align: center; border-top: 1px solid rgba(201,168,76,0.12); }
   .footer-music { font-size: 20px; letter-spacing: 8px; color: rgba(201,168,76,0.3); margin-bottom: 8px; }
   .footer-text { font-style: italic; font-size: 12px; color: rgba(250,243,224,0.3); line-height: 1.7; }
 </style>
@@ -265,7 +153,7 @@
       <div class="hymn-info">
         <div class="hymn-title">Гимн СССР</div>
         <div class="hymn-sub">Первая редакция</div>
-        <div class="hymn-fact">Написан в годы войны. Впервые прозвучал в новогоднюю ночь — 1 января 1944 года.</div>
+        <div class="hymn-fact">Написан в годы войны. Впервые прозвучал в новогоднюю ночь 1 января 1944 года.</div>
       </div>
       <div class="hymn-arrow">▶</div>
     </div>
@@ -274,12 +162,10 @@
         <div class="audio-wrap">
           <div class="audio-label">Слушать гимн 1944</div>
           <audio controls preload="none" id="audio1">
-            <source src="https://upload.wikimedia.org/wikipedia/commons/f/f2/Gimn_Sovetskogo_Soyuza_%281944_Vocal%29.ogg" type="audio/ogg">
-            <source src="https://upload.wikimedia.org/wikipedia/commons/3/30/Anthem_of_USSR_-_1943.ogg" type="audio/ogg">
+            <source src="https://promosounds.ru/wp-content/uploads/2017/09/gimn-sssr-ofecialnaja-zapis-1944-g.mp3" type="audio/mpeg">
+            <source src="https://zvukitop.com/wp-content/uploads/2021/09/gimn-sssr.mp3" type="audio/mpeg">
           </audio>
-          <div class="audio-note">
-            Не загружается? <a href="https://upload.wikimedia.org/wikipedia/commons/f/f2/Gimn_Sovetskogo_Soyuza_%281944_Vocal%29.ogg">Скачать файл</a> · Wikimedia Commons
-          </div>
+          <div class="audio-note">Официальная запись 1944 года · Музыка А. Александрова</div>
         </div>
         <button class="lyrics-btn" onclick="toggleLyrics('ly1',this)">▼ &nbsp; Показать слова</button>
         <div class="lyrics-block" id="ly1">
@@ -313,7 +199,7 @@
       <div class="hymn-info">
         <div class="hymn-title">Гимн СССР</div>
         <div class="hymn-sub">Новая редакция</div>
-        <div class="hymn-fact">Михалков убрал упоминание Сталина. Музыка Александрова осталась неизменной.</div>
+        <div class="hymn-fact">Михалков убрал упоминание Сталина. Музыка осталась прежней — она не менялась никогда.</div>
       </div>
       <div class="hymn-arrow">▶</div>
     </div>
@@ -322,12 +208,10 @@
         <div class="audio-wrap">
           <div class="audio-label">Слушать гимн 1977</div>
           <audio controls preload="none" id="audio2">
-            <source src="https://upload.wikimedia.org/wikipedia/commons/5/52/Gimn_Sovetskogo_Soyuza_%281977_Short_Vocal%29.oga" type="audio/ogg">
-            <source src="https://upload.wikimedia.org/wikipedia/commons/c/c0/Hymn_of_ussr_instrumental.ogg" type="audio/ogg">
+            <source src="https://zvukitop.com/wp-content/uploads/2021/09/gimn-sssr.mp3" type="audio/mpeg">
+            <source src="https://promosounds.ru/wp-content/uploads/2017/09/gimn-sssr-ofecialnaja-zapis-1944-g.mp3" type="audio/mpeg">
           </audio>
-          <div class="audio-note">
-            Не загружается? <a href="https://upload.wikimedia.org/wikipedia/commons/5/52/Gimn_Sovetskogo_Soyuza_%281977_Short_Vocal%29.oga">Скачать файл</a> · Wikimedia Commons
-          </div>
+          <div class="audio-note">Музыка А. Александрова · Слова С. Михалкова</div>
         </div>
         <button class="lyrics-btn" onclick="toggleLyrics('ly2',this)">▼ &nbsp; Показать слова</button>
         <div class="lyrics-block" id="ly2">
@@ -370,13 +254,11 @@
         <div class="audio-wrap">
           <div class="audio-label">Слушать гимн России</div>
           <audio controls preload="none" id="audio3">
-            <source src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Russian_Anthem_chorus.ogg" type="audio/ogg">
-            <source src="https://upload.wikimedia.org/wikipedia/commons/e/e7/National_Anthem_of_Russian_Federation.ogg" type="audio/ogg">
-            <source src="https://upload.wikimedia.org/wikipedia/commons/4/43/Gimn_rf_t1.ogg" type="audio/ogg">
+            <source src="https://zvukitop.com/wp-content/uploads/2021/09/gimn-rossii-slova.mp3" type="audio/mpeg">
+            <source src="https://download-sounds.ru/wp-content/uploads3/2012/11/gimn.mp3" type="audio/mpeg">
+            <source src="https://download-sounds.ru/wp-content/uploads3/2012/11/gimn_-_gimn_rossii_so_slovami.mp3" type="audio/mpeg">
           </audio>
-          <div class="audio-note">
-            Не загружается? <a href="https://upload.wikimedia.org/wikipedia/commons/a/a9/Russian_Anthem_chorus.ogg">Скачать файл</a> · Kremlin.ru / Wikimedia Commons · CC BY 3.0
-          </div>
+          <div class="audio-note">Президентский оркестр и Кремлёвский хор</div>
         </div>
         <button class="lyrics-btn" onclick="toggleLyrics('ly3',this)">▼ &nbsp; Показать слова</button>
         <div class="lyrics-block" id="ly3">
@@ -412,8 +294,7 @@
 <div class="footer">
   <div class="footer-music">♩ ♪ ♫ ♬</div>
   <div class="footer-text">
-    Музыка Александра Александрова · Слова Сергея Михалкова<br>
-    Аудио: Wikimedia Commons · свободная лицензия
+    Музыка Александра Александрова · Слова Сергея Михалкова
   </div>
 </div>
 
